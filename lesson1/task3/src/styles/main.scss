@@ -1,0 +1,66 @@
+.main {
+    width: 100%;
+    position: relative;
+    top: 160px;
+    display: flex;
+    &__sidebar_time {
+        color: $textColorgrey;
+        font-size: 12px;
+    }
+    &__sidebar_timing {
+        width: 6%;
+        &_place {
+            height: 50px;
+            position: relative;
+            span {
+                position: absolute;
+                top: -8px;
+            }
+        }
+        &_place-bord {
+            width: 15px;
+            height: 1px;
+            background-color: $borderColor;
+            position: absolute;
+            right: 0;
+            top: -1px;
+        }
+    }
+    &__sidebar_days {
+        display: flex;
+        flex: 1;
+        &_line {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        &_hours {
+            height: 50px;
+            width: 100%;
+            border-bottom: 1px solid $borderColor;
+            border-left: 1px solid $borderColor;
+        }
+    }
+}
+
+.main__sidebar_day_object {
+    font-size: 12px;
+    color: $backgroundColor;
+    height: 95%;
+    width: 93%;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 3px 3px 5px 0 #b5bbc1;
+    p,h4 {
+        margin: 0;
+        padding: 0;
+        word-wrap: break-word;
+    }
+}
+
+.main__sidebar_days_hours {
+    position: relative;
+}

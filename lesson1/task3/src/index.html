@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Calendar</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+
+            <nav class="nav">
+                <button class="nav__button">
+                    <img src="https://img.icons8.com/color/48/000000/plus-math.png" class="plus">
+                    Create
+                </button>
+                <button class="nav_day">Today</button>
+                <div class="nav__arow">
+                    <div class="nav__arow_left"></div>
+                    <div class="nav__arow_right"></div>
+                </div>
+                <div class="nav__dateMonEar">
+                    <h2 class="nav__dateMonEar-today"> Dec-2019 </h2>
+                </div>
+            </nav>
+
+            <div class="header__week-block">
+                <div class="header__week-block_gmt-cell">
+                    gmt+02
+                    <div class="header__week-block_gmt-cell_part-bord"></div>
+                </div>
+
+
+                <div class="header__week-block_line">
+                    <div class="header__week-block_days">
+                        <div class="header__week-block_part-bord"></div>
+                        <p class="header__week-block_dayname">sun</p>
+                        <p class="header__week-block_daydate"></p>
+                    </div>
+                    <div class="header__week-block_days">
+                        <div class="header__week-block_part-bord"></div>
+                        <p class="header__week-block_dayname">mon</p>
+                        <p class="header__week-block_daydate"></p>
+                    </div>
+                    <div class="header__week-block_days">
+                        <div class="header__week-block_part-bord"></div>
+                        <p class="header__week-block_dayname">tue</p>
+                        <p class="header__week-block_daydate"></p>
+                    </div>
+                    <div class="header__week-block_days">
+                        <div class="header__week-block_part-bord"></div>
+                        <p class="header__week-block_dayname">wen</p>
+                        <p class="header__week-block_daydate"></p>
+                    </div>
+                    <div class="header__week-block_days">
+                        <div class="header__week-block_part-bord"></div>
+                        <p class="header__week-block_dayname">th</p>
+                        <p class="header__week-block_daydate"></p>
+                    </div>
+
+                    <div class="header__week-block_days">
+                        <div class="header__week-block_part-bord"></div>
+                        <p class="header__week-block_dayname">fr</p>
+                        <p class="header__week-block_daydate"></p>
+                    </div>
+                    <div class="header__week-block_days">
+                        <div class="header__week-block_part-bord"></div>
+                        <p class="header__week-block_dayname">sat</p>
+                        <p class="header__week-block_daydate"></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="popup-layer">
+                <form class="popup event" data-id-event="">
+                    <span class="popup__btn-close"><img class="close"
+                            src="https://img.icons8.com/color/48/000000/close-window.png"></span>
+                    <input class="event__name" name="header" type="text" placeholder="Add title ">
+                    <div class="popup__picker">
+                        <img class="clock" src="https://img.icons8.com/pastel-glyph/64/000000/time.png">
+                        <input class="event__date-start specialDate input" name="startTime" required type="date">
+                        <input type="time" class="startTime_place time-place input" name="startTimePlace">
+                        <span class='line'></span>
+                        <input type="time" class="endTime_place time-place input" name="endTimePlace">
+                        <input class="event__date-end specialDate input" name="endTime" required type="date">
+                    </div>
+                    <div class="centerData">
+                        <img class="multiline" src="https://img.icons8.com/windows/32/000000/multiline-text.png">
+                        <textarea type="text" class="multiline__text" placeholder="add description" name="description"></textarea>  
+                        <input type="color" class="pick_color" name="backgroundColor">
+                    </div>
+                    <div class="footer-popup">
+                        <p class="message_validation"></p>
+                        <div class="buttons">
+                            <img class="event__btn-delete"
+                                src="https://img.icons8.com/windows/32/000000/trash.png">
+                            <button type="submit" class="event__btn-save btn_save">Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="main__sidebar_timing"></div>
+            <div class="main__sidebar_days"></div>
+        </main>
+    </div>
+ 
+
+    <script type="module" src="./scripts/index.js"></script>
+</body>
+
+</html>

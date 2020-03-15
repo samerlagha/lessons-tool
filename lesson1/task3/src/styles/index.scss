@@ -1,0 +1,16 @@
+@import 'common.scss';
+@import 'header.scss';
+@import 'main.scss';
+@import 'popup.scss';
+@import 'redLIne.scss';
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $commoFontSize;
+    background-color: $backgroundColor;
+    height: 100vh;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    color: $textColorBlack;
+}

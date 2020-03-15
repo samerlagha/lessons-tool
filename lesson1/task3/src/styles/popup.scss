@@ -1,0 +1,151 @@
+.display-none {
+    display: block;
+}
+
+.popup-layer {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+}
+
+.popup {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    height: 330px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 16px 8px 16px 8px;
+    border-radius: 8px;
+    background-color: #fff;
+    &__picker {
+        display: flex;
+        margin: 45px 0;
+        align-items: center;
+        position: relative;
+        left: 7px;
+    }
+    &__btn-close {
+        position: absolute;
+        right: 10px;
+        top: -3px;
+    }
+}
+
+.event {
+    &__name {
+        border: none;
+        border-bottom: 2px solid #d5d5d5;
+        width: 90%;
+        font-size: 20px;
+        letter-spacing: 2px;
+        outline: none;
+        margin-top: 30px;
+    }
+    &__description {
+        border: none;
+    }
+    &__btn-delete{
+        display: none;
+    }
+    &__date-start,
+    &__date-end {
+        padding: 2px;
+        margin-left: 18px;
+        border: none;
+        background-size: contain;
+        outline: none;
+        width: 150px;
+    }
+    &__time-start,
+    &__time-end {
+        border: none;
+        background-size: contain;
+        outline: none;
+        padding: 2px;
+        background-color: #fff;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+}
+
+.footer-popup {
+    position: relative;
+    top: 60px;
+    width: 100%;
+}
+
+.clock {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.line {
+    left: 237px;
+    width: 8px;
+    margin: 0 5px;
+    border-top: 2px solid black;
+}
+
+.multiline {
+    cursor: pointer;
+    &__text {
+        color: rgb(53, 53, 56);
+        border: none;
+    }
+    &__text:hover{
+        background-color: $colorForHoverInputs;
+    }
+}
+.centerData{
+    display: flex;
+    justify-content: space-between;
+}
+
+.close {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.event__btn-delete {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+} 
+
+
+.btn_save{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding:  10px 20px;
+    background: royalblue;
+    color: white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message_validation{
+    color: red;
+    margin: 0;
+    margin-top: 10px;
+    height: 1.2em;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

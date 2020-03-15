@@ -1,0 +1,164 @@
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    padding-left: 120px;
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 10px;
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 130px;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+        background-color: white;
+        margin-right: 50px;
+        font-size: 18px;
+        &:hover {
+            box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
+            transition: 0.5s;
+        }
+    }
+    &_day {
+        border: 1px solid #928d8d61;
+        border-radius: 5px;
+        height: 40px;
+        width: 90px;
+        background-color: transparent;
+        outline: none;
+        margin-right: 50px;
+        font-weight: 700;
+        &:hover {
+            background-color: #dbd3d3;
+            transition: 1s;
+        }
+    }
+    &__dateMonEar-today {
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+.nav__arow {
+    display: flex;
+    margin-right: 50px;
+    &_right {
+        background-image: url("https://img.icons8.com/material-sharp/24/000000/forward.png");
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: auto;
+        &:hover {
+            background-color: #D3D3D3;
+            transition: 1s;
+        }
+    }
+    &_left {
+        background-image: url("https://img.icons8.com/material-sharp/24/000000/forward.png");
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        transform: rotate(180deg);
+        background-position: center;
+        background-size: auto;
+        &:hover {
+            background-color: #D3D3D3;
+            transition: 1s;
+        }
+    }
+}
+
+.plus {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: $backgroundColor;
+    &__week-block {
+        height: 80px;
+        width: 100%;
+        display: flex;
+        &_line {
+            flex: 1;
+            display: flex;
+            border-bottom: 1px solid $borderColor;
+        }
+        &_days {
+            flex: 1;
+            align-self: flex-end;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 8px;
+        }
+        &_part-bord {
+            position: absolute;
+            bottom: 0;
+            height: 30px;
+            width: 1px;
+            background-color: $borderColor;
+        }
+        &_gmt-cell {
+            padding-right: 2%;
+            align-self: flex-end;
+            padding-bottom: 1%;
+            width: 6%;
+            position: relative;
+            &_part-bord {
+                width: 15px;
+                height: 1px;
+                background-color: $borderColor;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        &_dayname,
+        &_daydate {
+            margin: 0;
+        }
+        &_dayname,
+        &_gmt-cell {
+            color: $textColorgrey;
+            font-size: 12px;
+        }
+        &_daydate {
+            padding: 10px;
+            border-radius: 50%;
+            margin: 5px auto 0 auto;
+            width: 30px;
+            height: 30px;
+            line-height: 12px;
+            display: flex;
+            justify-content: center;
+        }
+        &_daydate:hover {
+            background-color: $backgroundGreyColor;
+            cursor: pointer;
+        }
+    }
+}
+
+.today__header__week-block_days {
+    .header__week-block_dayname {
+        color: $blueColor;
+    }
+    .header__week-block_daydate {
+        background-color: $blueColor;
+        color: $backgroundColor;
+    }
+    .header__week-block_daydate:hover{
+        background-color: $blueColorDarker;
+    }
+}
