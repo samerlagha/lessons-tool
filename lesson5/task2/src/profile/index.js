@@ -1,5 +1,5 @@
-import { fetchUser } from './gateway';
-import printProfile from './printProfile';
+import { fetchUser } from './gateway.js';
+import printProfile from './printProfile.js';
 
 fetchUser('github')
     .then(({ name, location }) => printProfile({
