@@ -1,0 +1,32 @@
+{
+  "name": "calendar-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build:styles": "sass ./src/styles/index.scss ./dist/styles.css",
+    "copy:html": "cp ./src/index.html ./dist/index.html",
+    "build:scripts": "babel ./src --out-dir=./dist",
+    "clean": "rm -rf ./dist",
+    "build": "npm-run-all clean build:* copy:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "jest": "^25.1.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.26.3",
+    "web-pack": "^1.0.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4"
+  }
+}

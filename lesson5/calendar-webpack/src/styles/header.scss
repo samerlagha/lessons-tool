@@ -1,0 +1,97 @@
+.header {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid
+    rgba(155, 154, 154, 0.75);
+    background: linear-gradient(90deg,
+    #ec2f26 3%, #24282a 47%,
+    rgba(14, 17, 218, 0.99) 95%);
+    position: fixed;
+    z-index: 9999;
+    
+    &__button_create {
+        width: 110px;
+        height: 40px;
+        border-radius: 20px;
+        box-shadow: 9px 11px 19px -9px rgba(0,0,0,0.62);
+        margin-left: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: red;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        background-color: blue;
+
+        &:hover {
+
+            background-color:#cc1313;
+             color:#fff;
+           
+            .fa-plus{
+                background: $white;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+        }
+
+        .fa-plus {
+            font-size: 25px;
+            background: linear-gradient(167deg, rgb(202, 8, 8) 46%, rgb(65, 246, 20) 63%); 
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+
+           
+        }
+    }
+
+    &__button_today {
+        width: 70px;
+        height: 30px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        background-color:blue;
+        color: $white;
+        margin-left: 40px;
+        outline: none;
+        font-weight: 500;
+
+        &:hover {
+            background-color: coral;
+        }
+    }
+
+    &__week-toggle {
+        
+        &_chevron-left {
+            margin-left: 30px;
+        }
+
+        &_chevron-right {
+            margin-left: 20px;
+        }
+
+        .chevron {
+            font-size: 15px;
+            color:white;
+            cursor: pointer;
+        }
+    }
+
+    &__current-month-year { 
+        font-size: 17px;
+        margin-left: 30px;
+        font-weight: 500;
+        color: $text-white;
+        font-family: roboto;
+    }
+}
+.fa-chevron-right:hover{
+ color: red;
+}
+.fa-chevron-left:hover{
+ color: red;
+}
