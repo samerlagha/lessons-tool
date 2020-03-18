@@ -9,6 +9,3 @@ import { deleteEvent } from './delete-event.js';
 import { durationValidation } from './validating-form.js';
 import { renderRedLine } from './redline.js';
 import { setItemToStorage, getItemFromStorage } from './storage.js';
-
-
-
