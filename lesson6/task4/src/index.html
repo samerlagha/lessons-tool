@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+        <!--HEADER-->
+    <header class="header">
+      <div class="btn header__button_create">
+        <i class="fas fa-plus"></i>
+        Create
+      </div>
+      <button class="btn header__button_today">Today</button>
+      <div class="header__week-toggle">
+        <span class="header__week-toggle_chevron-left ">
+          <i class="fas fa-chevron-left chevron"></i>
+        </span>
+        <span class="header__week-toggle_chevron-right">
+          <i class="fas fa-chevron-right chevron"></i>
+        </span>
+      </div>
+      <span class="header__current-month-year"></span>
+    </header>
+
+    <!--NAVIGATION-->
+    <nav class="days-container"></nav>
+
+    <main class="main-part">
+      <!--SIDEBAR-->
+      <section class="sidebar"></section>
+      <!--CALENDAR-->
+      <section class="calendar"></section>
+      <div class="redline"></div>
+    </main>
+    
+
+    <!-- POPUP -->
+
+    <div class="popup-modal popup-displayed">
+      <form class="popup">      
+        <div class="popup__header">
+          <i class="fas fa-times popup__header_close-btn"></i>
+          <input class="popup__header_title-input" type="text" name="title" placeholder="Add Title"></input>
+        </div>
+
+        <div class="popup__color-scheme">
+          <label class="popup__color-scheme_label">
+              <span class="popup__color-scheme_label-text">Choose a color</span>
+              <input class="popup__color-scheme_chooser" type="color" name="colorChooser" value="#4b28d1">
+          </label>
+      </div>
+
+        <div class="popup__info">
+          <div class="popup__info_icon"><i class="far fa-clock"></i></div>
+          <input class="popup__info_date-from" type="date" name="dateFrom"></input>
+          <div class="popup__info_duration">
+            <input class="popup__info_duration-from" name="timeFrom" type="time"></input>
+            <div class="popup__info_duration-line"> - </div>
+            <input class="popup__info_duration-to" name="timeTo" type="time"></input>
+          </div>
+          <input class="popup__info_date-to" type="date" name="dateTo"></input>
+        </div>
+
+        <div class="popup__description">
+          <div class="popup__description_icon"><i class="fas fa-align-left"></i></div>
+          <input class="popup__description_text" type="text" name="description" placeholder="Add Description"></input>
+          <input class="popup__id" type="number" name="id" value="0" hidden></input>
+        </div>
+        
+        <div class="popup__action">
+          <span class="popup__action_delete"><i class="fas fa-trash-alt"></i></span>
+          <input class="popup__action_save" type="submit" value="Save"></input>
+        </div>
+      </form>
+    </div>
+  </body>
+
+<script src="./src/scripts/index.js" type="module"></script>
+</html>
