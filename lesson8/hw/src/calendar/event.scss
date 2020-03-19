@@ -1,0 +1,17 @@
+.day-event {
+    width: 90%;
+    font-size: 11px;
+    color: $text-white;
+
+    background: linear-gradient(167deg, rgba(126,109,232,1) 5%, rgba(26,168,190,1) 100%);
+    
+
+    //background: linear-gradient(0deg, rgba(109,73,246,1) 0%, rgba(10,39,213,1) 100%);
+    //background-image: linear-gradient(to top, #4bbff9 0%, #293dce 100%);
+    // box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+    border-radius: 3px;
+    padding: 2px;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
