@@ -4,9 +4,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server -d --devtools eval-source-map --open",
+    "build": "webpack -p",
     "test": "jest",
     "test:watch": "jest --watch",
-    "build": "webpack -p",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix"
   },
