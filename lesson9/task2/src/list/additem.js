@@ -1,6 +1,6 @@
-import { renderListItems } from './renderer.js';
-import { setItem } from './storage.js';
-import { createTask, getTasksList } from './tasksGateway.js';
+import { renderListItems } from './renderer';
+import { setItem } from './storage';
+import { createTask, getTasksList } from './tasksGateway';
 
 const taskInput = document.querySelector('.task-input');
 const createTaskBtn = document.querySelector('.create-task-btn');
@@ -22,10 +22,3 @@ export const addItem = (newItem) => {
 createTaskBtn.addEventListener('click', () => {
   if (taskInput.value !== '') return addItem(taskInput.value);
 });
-
-
-// 1. Prepare data
-// 2. Write data to db
-// 3. Read new data from server
-// 4. Save new data to front-end storage
-// 5. Update UI based on new data

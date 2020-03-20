@@ -1,6 +1,6 @@
-import { deleteTask, getTasksList } from './tasksGateway.js';
-import { setItem } from './storage.js';
-import { renderListItems } from './renderer.js';
+import { deleteTask, getTasksList } from './tasksGateway';
+import { setItem } from './storage';
+import { renderListItems } from './renderer';
 
 const listElem = document.querySelector('.list');
 

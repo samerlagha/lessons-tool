@@ -1,6 +1,6 @@
-import { renderListItems } from './renderer.js';
-import { setItem, getItem } from './storage.js';
-import { updateTask, getTasksList } from './tasksGateway.js';
+import renderListItems from './renderer';
+import { setItem, getItem } from './storage';
+import { updateTask, getTasksList } from './tasksGateway';
 
 const listElem = document.querySelector('.list');
 export const onChangeFunc = (event) => {
@@ -30,10 +30,3 @@ export const onChangeFunc = (event) => {
     });
 };
 listElem.addEventListener('change', onChangeFunc);
-
-
-// 1. Prepare data
-// 2. Write new data in bd
-// 3. Read new data from server
-// 4. Save new data to front-end storage
-// 5. Update UI based on new data

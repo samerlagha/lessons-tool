@@ -1,8 +1,8 @@
-import { getItem } from './storage.js';
+import { getItem } from './storage';
 import './main.scss';
 
 const listElem = document.querySelector('.list');
-export const renderListItems = () => {
+export default () => {
   listElem.innerHTML = '';
   const arrayOfTasks = getItem('arrayOfTasks') || [];
   const listItemsElems = arrayOfTasks
