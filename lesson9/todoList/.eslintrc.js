@@ -3,12 +3,12 @@ module.export = {
     rules: {
         'no-console': 2,
         'import/prefer-defaul-export':0,
-        "prettier/prettier": "error"
+        // "prettier/prettier": "error"
        
     },
     env: {
          browser: true,
-        "es6": true,
+        // "es6": true,
      
     },
    
@@ -16,12 +16,14 @@ module.export = {
         ecmaVersion: 10,
    
         sourceType: 'module',
+    
 
-        "ecmaFeatures": {
-            "jsx": true,
-            "modules": true
-        }
-    },
-    "plugins": ["prettier"],
-  "extends": ["prettier"],
+//         "ecmaFeatures": {
+//             "jsx": true,
+//             "modules": true
+//         }
+//     },
+//     "plugins": ["prettier"],
+//   "extends": ["prettier"],
+    }
 }
